@@ -8,7 +8,6 @@ import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    <FaShoppingCart />
   </Layout>
 )
 

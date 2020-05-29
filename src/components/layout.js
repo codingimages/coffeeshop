@@ -9,9 +9,11 @@ import React from "react"
 import PropTypes from "prop-types"
 import "./layout.css"
 import "./bootstrap.css"
+import Navbar from "./globals/Navbar"
 
 const Layout = ({ children }) => (
   <>
+    <Navbar />
     {children}
   </>
 )
