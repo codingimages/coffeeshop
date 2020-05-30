@@ -8,12 +8,12 @@ import Layout from "../components/layout"
 import IndexHeroImage from "../components/globals/IndexHeroImage"
 import Info from "../components/home/Info"
 
-const IndexPage = ({ data }) => (
+const AboutPage = ({ data }) => (
   <Layout>
     <IndexHeroImage
       img={data.img.childImageSharp.fluid}
-      title="Coffee Shop Online"
-      styleClass="default-background"
+      title="About Us"
+      styleClass="about-background"
     />
     <Info />
   </Layout>
@@ -21,7 +21,7 @@ const IndexPage = ({ data }) => (
 
 export const query = graphql`
 {
-  img: file(relativePath: {eq: "default-background.jpeg"}){
+  img: file(relativePath: {eq: "about-background.jpeg"}){
      childImageSharp{
       fluid{
         ...GatsbyImageSharpFluid_tracedSVG
@@ -33,4 +33,4 @@ export const query = graphql`
 
 console.log(query)
 
-export default IndexPage
+export default AboutPage
