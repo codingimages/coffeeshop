@@ -7,11 +7,11 @@ export default function Info() {
         <section className="py-5">
             <div className="container">
                 <Title
-                    title="Our Story"
+                    title="We will get back to you shortly"
                 />
                 <div className="row">
                     <div className="col-10 col-sm-8 mx-auto text-center">
-                        <p className="lead text-muted mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam est dolor nemo corporis doloremque excepturi nulla sed, consectetur beatae nesciunt labore incidunt optio, ratione illo explicabo! Explicabo iste cupiditate obcaecati eos nam, asperiores ea quo, magnam est eaque fuga possimus facere architecto inventore enim ducimus reprehenderit in molestiae voluptates illo.</p>
+                        <p className="lead text-muted mb-5">In the meantime, please keep enjoyng navigating our site and let us know if there is anything else that we can help with.</p>
                         <Link
                             to="/"
                         >

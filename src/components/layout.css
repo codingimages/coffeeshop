@@ -34,7 +34,7 @@ h1, h2, h3, h4, h5, h6{
   justify-content: center;
   background-position: center;
   background-size: cover;
-  background-image: linear-gradient(to right, rgba(255,158,9,.8), rgba(255,158,9,.8));
+  background-image: linear-gradient(to right, rgba(255,158,9,.5), rgba(255,158,9,.5));
 }
 
 .about-background{
@@ -56,3 +56,8 @@ h1, h2, h3, h4, h5, h6{
 .footer{
   background: var(--mainDark);
 }
+
+.menu, .contact{
+  background-color: var(--mainGrey);
+}
+

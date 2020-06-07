@@ -31,6 +31,4 @@ export const query = graphql`
 }
 `
 
-console.log(query)
-
 export default AboutPage

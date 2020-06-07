@@ -7,6 +7,9 @@ import Layout from "../components/layout"
 // import SEO from "../components/seo"
 import IndexHeroImage from "../components/globals/IndexHeroImage"
 import Info from "../components/home/Info"
+import Menu from "../components/home/Menu"
+import Products from "../components/home/Products"
+import Contact from "../components/home/Contact"
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -16,6 +19,9 @@ const IndexPage = ({ data }) => (
       styleClass="default-background"
     />
     <Info />
+    <Menu items={data.menu} />
+    <Products />
+    <Contact />
   </Layout>
 )
 
@@ -28,9 +34,25 @@ export const query = graphql`
       }
     }
   }
+  menu: allContentfulCoffeeItem {
+    edges {
+      node{
+        id
+        title
+        description{
+          description
+        }
+        price
+        category
+        image{
+          fixed(width: 50, height: 50){
+            ...GatsbyContentfulFixed_tracedSVG
+          }
+        }
+      }
+    }
+  }
 }
 `
-
-console.log(query)
 
 export default IndexPage
