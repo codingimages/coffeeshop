@@ -14,7 +14,7 @@ const Product = ({ product }) => {
                     className="btn btn-yellow my-3 text-capitalize w-50 mx-auto snipcart-add-item"
                     data-item-id={product.id}
                     data-item-price={product.price}
-                    data-item-url="https://ismycoffeeshop.netlify.app/#!/checkout"
+                    data-item-url="https://ismycoffeeshop.netlify.app/#!/"
                     data-item-image={product.image.fluid.src}
                     data-item-name={product.title}
                 >
